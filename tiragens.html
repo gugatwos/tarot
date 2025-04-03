@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Cormorant+Garamond:wght@400;600&display=swap">
+  <title>Tiragens | Tarot de Thoth</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .tiragens {
+      font-family: 'Cormorant Garamond', serif;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+      text-align: justify;
+      color: #eee;
+    }
+
+    .tiragens h2 {
+      font-size: 1.9rem;
+      color: #f7c242;
+      margin-top: 2.5rem;
+      font-family: 'Pirata One', cursive;
+      text-align: center;
+    }
+
+    .preco {
+      font-family: 'Pirata One', cursive;
+      font-size: 1.6rem;
+      color: #f7c242;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .tiragens p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .aviso-final {
+      font-size: 1rem;
+      color: #ff00005e;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .tiragens hr {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 3rem 0;
+  }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-size: 28px;
+    z-index: 99;
+  }
+
+  @media (max-width: 768px) {
+    .carta {
+      display: none;
+    }
+
+    .tiragens {
+      padding: 2rem 1rem;
+    }
+  }
+  .tiragens hr {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 3rem 0;
+  }
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-size: 28px;
+    z-index: 99;
+  }
+
+  .whatsapp-float:hover::after {
+    content: "Vamos realizar uma consulta?";
+    position: absolute;
+    right: 70px;
+    background: #222;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .instagram-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #E1306C;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-size: 28px;
+    z-index: 99;
+  }
+
+  .instagram-float:hover::after {
+    content: "Me siga no Instagram!";
+    position: absolute;
+    left: 70px;
+    background: #222;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 768px) {
+    .carta {
+      display: none;
+    }
+
+    .tiragens {
+      padding: 2rem 1rem;
+    }
+  }
+</style>
+<style>
+  .carta {
+    position: absolute;
+    width: auto;
+    height: 200px;
+    opacity: 0.5;
+    border-radius: 10px;
+    z-index: 0;
+    filter: drop-shadow(0 0 4px #000);
+  }
+
+  .esquerda1 { top: 12%; left: 10px; }
+  .esquerda2 { top: 58%; left: 10px; }
+
+  .direita1 { top: 12%; right: 10px; }
+  .direita2 { top: 58%; right: 10px; }
+</style>
+</head>
+<body class="bg">
+  <!-- Cartas decorativas -->
+  <img class="carta esquerda1" src="imagens/7 - O Carro.jpg" alt="O Carro" />
+  <img class="carta esquerda2" src="imagens/19 - O Sol.jpg" alt="O Sol" />
+  <img class="carta direita1" src="imagens/8 - Ajustamento.jpg" alt="Ajustamento" />
+  <img class="carta direita2" src="imagens/11 - Luxúria.jpg" alt="Lust" />
+  <header class="top-nav">
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="bio.html">Minha Jornada</a></li>
+        <li><a href="tarot-thoth.html">O Tarot de Thoth</a></li>
+        <li><a href="tiragens.html" class="ativo">Tiragens</a></li>
+        <li><a href="https://wa.me/5513981600695" target="_blank">WhatsApp</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="tiragens">
+    <h2>Tiragem Solidária</h2>
+<div class="preco">R$10</div>
+<p>
+  Pensando em acolher pessoas em situação de vulnerabilidade ou passando por momentos delicados, é oferecida uma tiragem direta e objetiva por um valor simbólico. Essa leitura é feita com cuidado e foco em fornecer uma orientação prática e reconfortante. Mesmo sendo breve, ela tem o objetivo de trazer clareza e apontar uma direção com respeito, empatia e responsabilidade. Ideal para quem precisa de um auxílio rápido, mas profundo.
+</p>
+<hr />
+
+<h2>Consulta via WhatsApp</h2>
+<div class="preco">A partir de R$15</div>
+<p>
+  A consulta via WhatsApp é ideal para quem busca respostas práticas, rápidas e sem pressa. Você envia suas perguntas e recebe as leituras em áudio explicativo e imagem da leitura realizada. As respostas são assertivas, fundamentadas e adaptadas à sua necessidade. É possível abordar diferentes áreas da vida como amor, trabalho, espiritualidade e saúde energética. O valor varia conforme a quantidade e a complexidade das perguntas, sempre com transparência e dedicação ao seu momento.
+</p>
+<hr />
+
+<h2>Perguntas de 3 Cartas</h2>
+<div class="preco">R$25</div>
+<p>
+  Essa tiragem trabalha com três posições simbólicas: o momento presente, a energia desativada e a energia ativada. A partir disso, é possível compreender onde há bloqueios e como movimentar forças para alcançar seus objetivos. É uma leitura direta e eficaz, perfeita para quem precisa tomar decisões rápidas ou entender a energia de uma situação. Indica onde se está e o que precisa ser feito para avançar com assertividade.
+</p>
+<hr />
+
+<h2>Perguntas de 5 Cartas</h2>
+<div class="preco">R$40</div>
+<p>
+  Essa leitura expande a de 3 cartas e traz mais profundidade para a análise. Composta pelas cartas: presente, energia desativada, energia ativada, o processo e o resultado (quintessência), ela permite compreender não apenas a situação atual, mas também o que está por vir e como se desenrolará. É indicada para questões mais complexas ou quando se deseja entender os caminhos que se abrem a partir de determinada escolha. Traz mais nuances à leitura e fornece orientações ricas.
+</p>
+<hr />
+
+<h2>Templo de Afrodite</h2>
+<div class="preco">R$55</div>
+<p>
+  Uma leitura para explorar a energia do amor e da intimidade. O Templo de Afrodite revela os pensamentos, emoções e desejos físicos de ambos na relação, oferecendo um panorama profundo do momento amoroso. A leitura ainda inclui um conselho final da deusa Afrodite, trazendo beleza, verdade e direcionamento à conexão afetiva. Indicado tanto para quem está em um relacionamento quanto para quem deseja compreender uma conexão amorosa específica.
+</p>
+<hr />
+
+<h2>O Jogo da Decisão</h2>
+<div class="preco">R$60</div>
+<p>
+  Essa tiragem é indicada para momentos de encruzilhada. Com sete cartas, ela mostra dois caminhos possíveis e os desdobramentos de cada um, além de uma carta central que revela a energia predominante da situação. É um jogo que promove clareza, permitindo escolhas mais conscientes e alinhadas ao seu propósito. Excelente para decisões importantes, mudanças de carreira, relacionamentos ou escolhas existenciais. Dá autonomia e poder de decisão ao consulente.
+</p>
+<hr />
+
+<h2>O Jogo do Louco</h2>
+<div class="preco">R$70</div>
+<p>
+  É uma análise que narra 12 cartas que giram em torno do Arcano O Louco. Essa tiragem mostra onde você está na sua jornada pessoal: o que ficou para trás, o que está por vir, e qual o momento presente. Ideal para compreender o propósito de vida, mudanças de ciclo, crises existenciais e processos de transição. Uma leitura profunda, introspectiva e que revela o mapa interno da alma em movimento.
+</p>
+<hr />
+
+<h2>A Porta</h2>
+<div class="preco">R$120</div>
+<p>
+  Para quem está prestes a atravessar um novo patamar, essa leitura apresenta 11 cartas dispostas na forma de uma porta simbólica. Revela o que a mantém fechada, o que está por trás dela e o que acontece ao se atravessá-la. É uma leitura voltada para decisões transformadoras. Estimula a intuição e promove um mergulho nos seus medos, desejos e caminhos possíveis.
+</p>
+<hr />
+  <h2>Mandala Astrológica</h2>
+<div class="preco">R$100</div>
+<p>
+  Essa tiragem é um verdadeiro mapa para os próximos 12 meses da sua vida. Inspirada nas 12 casas da astrologia, ela analisa mês a mês os diferentes setores da existência: amor, trabalho, saúde, espiritualidade, relações familiares e mais. Cada carta posicionada revela as forças atuantes e os aprendizados de cada fase do seu ciclo anual. Além disso, um Arcano Maior é extraído para representar a energia regente do seu ano, funcionando como um guia central. A Mandala Astrológica é ideal para aniversários, começos de ciclo ou como leitura de Revolução Solar.
+</p>
+<hr />
+
+<h2>O Método da Aurora Dourada</h2>
+<div class="preco">R$250</div>
+<p>
+  Esta é a leitura mais complexa, completa e ritualística que realizo. Baseada no sistema mágico da Golden Dawn, é composta por cinco operações profundas: inicia-se com a escolha de um Arcano Significador que representa o consulente em essência, seguido de uma invocação simbólica que prepara o campo energético da leitura. A primeira operação analisa a posição do Significador nos quatro elementos (Tetragrammaton), revelando a área da vida mais impactada. A segunda e terceira operações exploram as casas astrológicas e os signos, oferecendo refinamento e direção. A quarta operação mergulha nos decanatos astrológicos em formato circular, ativando um campo simbólico completo ao redor do Significador. A quinta e última operação posiciona as cartas na Árvore da Vida da Qabalah, revelando os caminhos espirituais, bloqueios e desfechos possíveis. Ideal para perguntas profundas, crises existenciais, processos de iniciação e encruzilhadas da alma. É uma leitura intensa mas catalisadora.
+</p>
+<hr />
+<p style="text-align: center; font-family: 'Pirata One', cursive; color: #f7c242; font-size: 1.4rem;">Escolha a tiragem que mais ressoa com seu momento. O atedimento é realizado online por chamada de vídeo via Zoom ou Google Meet, e atendimento presencial em toda Itanhaém e região.</p>
+<hr />
+<p class="aviso-final">
+  Em respeito à ética profissional, temas sensíveis como <strong>adúlterio, infrações criminosas ou morte</strong> não serão abordados durante as leituras.
+</p>
+</main>
+  <a href="https://wa.me/5513981600695" class="whatsapp-float" target="_blank">📱</a>
+  <a href="https://wa.me/5513981600695" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" style="width: 28px; height: 28px;" />
+  </a>
+  <a href="http://instagram.com/gugatwos" class="instagram-float" target="_blank" aria-label="Instagram">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width: 28px; height: 28px;" />
+  </a>
+</body>
+</html>

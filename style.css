@@ -1,0 +1,260 @@
+body.bg {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #3d0070, #000);
+  color: #eee;
+  font-family: 'Pirata One', cursive;
+  overflow-x: hidden;
+}
+
+.conteudo {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #f7c242;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px #000;
+}
+
+p {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #dcdcdc;
+  font-weight: 300;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+nav li {
+  margin: 1.2rem 0;
+}
+
+nav a {
+  color: #f7c242;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  border: 1px solid #f7c242;
+  background: transparent;
+  transition: all 0.9s ease;
+  display: inline-block;
+  font-weight: 500;
+  margin: 0.1rem;
+}
+
+nav a:hover {
+  background: #f7c242;
+  color: #000;
+  transform: scale(1.03);
+}
+
+.frase-impacto {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.simbolo-central {
+  width: 90px;
+  opacity: 0.6;
+  margin: 1rem auto -1rem auto;
+  display: block;
+}
+
+.carta {
+  position: absolute;
+  width: auto;
+  height: 200px;
+  opacity: 0.5;
+  border-radius: 10px;
+  z-index: 0;
+  filter: drop-shadow(0 0 4px #000);
+}
+
+.esquerda1 { top: 12%; left: 10px; }
+.esquerda2 { top: 58%; left: 10px; }
+
+.direita1 { top: 12%; right: 10px; }
+.direita2 { top: 58%; right: 10px; }
+
+.top-nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.top-nav nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-nav nav li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.top-nav nav a {
+  font-size: 1rem;
+  color: #f7c242;
+  padding: 0.4rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+.top-nav nav a:hover {
+  background-color: #f7c242;
+  color: #000;
+}
+
+.top-nav nav a.ativo {
+  border: 1px solid #f7c242;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.texto-bio p {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* Fontes refinadas */
+.texto-bio {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+.texto-bio p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #eaeaea;
+}
+
+.conteudo.texto-bio {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-size: 28px;
+  z-index: 99;
+}
+
+@media (max-width: 768px) {
+  .carta {
+    display: none;
+  }
+
+  .tiragens {
+    padding: 2rem 1rem;
+  }
+}
+.tiragens hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 3rem 0;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-size: 28px;
+  z-index: 99;
+}
+
+.whatsapp-float:hover::after {
+  content: "Vamos realizar uma consulta?";
+  position: absolute;
+  right: 70px;
+  background: #222;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.instagram-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #E1306C;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  font-size: 28px;
+  z-index: 99;
+}
+
+.instagram-float:hover::after {
+  content: "Me siga no Instagram!";
+  position: absolute;
+  left: 70px;
+  background: #222;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .carta {
+    display: none;
+  }
+
+  .tiragens {
+    padding: 2rem 1rem;
+  }
+}
